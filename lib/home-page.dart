@@ -39,7 +39,7 @@ class _HomePageState extends State<HomePage> {
       'Authorization': 'Bearer ' + await _token
     };
     var response = await myHttp.get(
-        Uri.parse('http://pendaftaran.perpus.jatengprov.go.id/api/get-presensi'),
+        Uri.parse('****/api/get-presensi'),
         headers: headres);
     homeResponseModel = HomeResponseModel.fromJson(json.decode(response.body));
     riwayat.clear();
