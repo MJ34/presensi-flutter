@@ -52,7 +52,7 @@ class _LoginPageState extends State<LoginPage> {
     LoginResponseModel? loginResponseModel;
     Map<String, String> body = {"email": email, "password": password};
     var response = await myHttp.post(
-      Uri.parse('http://pendaftaran.perpus.jatengprov.go.id/api/login'),
+      Uri.parse('****/api/login'),
       body: body);
     if (response.statusCode == 401) {
       ScaffoldMessenger.of(context)
